@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <hr>
+    <script>
+
+        let snumber = 100 ; 
+        var Gnumber = prompt();
+       
+        if(Gnumber == snumber){
+            document.write("<h1 style='color:green'>Congratulations!</h1> <h2> You Guess the Correct Number</h2>")
+        }else if (Gnumber < snumber){
+            document.write("<h1 style='color:red;'>Adding More</h1>")
+        }else{
+            document.write("<h2 style='color:red'>Wrong Number!</h2> <br> <h1>Try Again <h1>")
+        }
+    </script>
+</body>
+</html>

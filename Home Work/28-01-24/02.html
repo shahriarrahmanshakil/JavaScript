@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h3> BMI Calculator</h3>
+    <hr>
+    
+    <script>
+        let weight = prompt("Enter your Weight");
+        let height = prompt("Enter your Height (meter)");
+        let bmi = weight / (height*height);
+        let Category ;
+        
+        if (bmi < 18.5){
+            Category = "<h1>Underweight</h1>";
+        }else if(18.5 < bmi && bmi < 24.9 ){
+            Category = "<h1>Normal Weight</h1>";
+        }else if(25.0 < bmi && bmi < 29.9){
+            Category = "You are Unfite"
+        } 
+       else{
+            Category = "<h1>Obese</h1>";
+        }
+        document.write(Category);
+    </script>
+</body>
+</html>
