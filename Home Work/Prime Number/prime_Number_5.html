@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_Number_5</title>
+</head>
+<body>
+    <Script>
+        const pnum5 = prompt();
+        let count5 = 0;
+        if(0 == pnum5 || 1 == pnum5){
+                document.write("neither prime nor composite");
+        }else{
+            for(x = 2; x < pnum5; x++){
+                if(pnum5 % x == 0){
+                    count5++;
+                    break;
+                }
+            }
+            if(count5 == 0){
+                document.write("Prime Number");
+            }else{
+                document.write("Not a Prime Number");
+            }
+        }
+    </Script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime_Number_4</title>
+</head>
+<body>
+    <script>
+        const pnum4 = prompt()
+        let count4 = 0;
+        if( pnum4 == 0 || pnum4 == 1 ) {
+                    document.write("neither prime nor composite");
+        }else{
+                    for( x = 2; x < pnum4; x++){
+                        if(pnum4 % x == 0){
+                            count4++;
+                            break;
+                        }
+                    }
+
+                    if(count4 == 0){
+                        document.write("Prime Number");
+                    }else{
+                        document.write("Not Prime Number");
+                    }
+        }
+    </script>
+</body>
+</html>

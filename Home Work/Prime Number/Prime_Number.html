@@ -9,8 +9,10 @@
     <script>
         const pnumBer = prompt("Enter Your Number");
         let count = 0;
-
-        for ( let x = 2; x < pnumBer ; x++ ) {
+        if( 0 == pnumBer || 1 == pnumBer){
+            document.write("Neither prime nor composite")
+        }else{
+                for ( let x = 2; x < pnumBer ; x++ ) {
                     if( pnumBer % x == 0 ){
                         count++
                         break;
@@ -22,8 +24,8 @@
                     }else{
                         document.write("Not a Prime Number");
                     }
-        
-                
+            }
+            
     </script>
 </body>
 </html>

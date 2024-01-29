@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_number_2</title>
+</head>
+<body>
+    <script>
+        const pnum2 = prompt("Enter Your Number");
+        let suM = 0;
+
+        if( pnum2 == 0 || pnum2 == 1){
+                document.write("Neither prime Nor Composite")
+        }else{
+            for(let x = 2; x < pnum2; x++){
+                if( pnum2 % x == 0 ){
+                    suM++;
+                    break;
+                }
+            }
+            if(suM == 0){
+                document.write("Prime Number");
+            }else{
+                document.write("Not Prime Number(composite Number)");
+            }
+        }
+
+    </script>
+</body>
+</html>
