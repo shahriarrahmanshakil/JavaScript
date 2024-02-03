@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Admission</title>
+
+</head>
+ 
+<body>
+<form action="#" method="post" name="myForm" style="width:200px; margin:0px auto; border:1px solid gray; padding:10px">
+  
+  <div>Name<br/>
+  <input type="text" name="txtName" />
+  </div>
+  
+  <div>Address<br/>
+  <textarea  name="txtAddress" ></textarea>
+  </div>
+  <div>Email<br/>
+    <textarea  name="txtEmail" ></textarea>
+  </div>
+  <div>
+  <input type="button" onclick="dyn_window()" value="Submit" />
+  </div>
+</form>
+
+<script language="javascript">
+ 
+function dyn_window(){  
+  
+  var title="My Title";
+  
+  var name=document.myForm.txtName.value;
+  var address=document.myForm.txtAddress.value;
+  var email=document.myForm.txtEmail.value;
+  
+
+   // create new window here
+  
+    a=open('','','width=200px,height=200px')
+  
+  with(a.document){
+    write("<html>");
+    write("<head><title>"+title+"</title></head>");
+    write("<body>");
+    write("Name:"+name+"<br/>");
+    write("Address:"+address+"<br/>");
+    write("Email:"+email+"<br/>");
+    write("<input type='button' value='Close me' onclick='self.close();' />");
+    write("<input type='button' value='Print' onclick='self.print();' />");
+    write("</body>");
+    write("</html>");
+  }
+   
+}// end the function 
+ 
+ 
+</script>
+</body>
+</html>

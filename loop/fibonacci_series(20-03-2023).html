@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci serios</title>
+</head>
+<body>
+    <!-- 0-10 serious -->
+    <script> 
+    // var n = 10, first = 0, second = 1, next=0;
+    // for (i=0; i<n; i++) { 
+    //     if(i<=1) { 
+    //         next=i;
+    //     } else { 
+    //         next = first + second;
+    //         first = second;
+    //         second = next;
+    //     }
+    //     document.write(next+" ");
+    // }
+    // program to generate fibonacci series up to n terms
+
+// take input from the user
+const number = parseInt(prompt('Enter the number of terms: '));
+let first = 0, second = 1, nextTerm;
+
+document.write('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    document.write(first +" ");
+    nextTerm = first + second;
+    first = second;
+    second = nextTerm;
+}
+    </script>
+</body>
+</html>

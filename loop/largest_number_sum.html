@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number Small number and sum</title>
+</head>
+<body>
+    <script> 
+     var n = [4,5,8,68,79,1];
+     var large = n[0];
+     var small = n[0];
+     var sum = 0;
+     for (i = 0; i<n.length; i = i+1) { 
+        if (small > n[i]) { 
+            small = n[i];
+        }
+        if (large < n[i]) { 
+            large = n[i];
+        }
+        sum+= n[i];
+     }
+     document.write("Small Number: "+small+"<br>");
+     document.write("Large Number: "+large+"<br>");
+     document.write("Total Number:"+sum);
+    </script>
+</body>
+</html>

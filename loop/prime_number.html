@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>  
+//for loop (initialization,conditon,increment/decriment/update)
+//prime Number 5=2,3,4
+let num =prompt("Input your Number");
+let count =0;
+if(num==0 || num==1){ 
+    document.write("Not Prime or Composite");
+}else{ 
+    for(i=2; i<num; i++){ 
+        if(num%2==0){ 
+            count++;
+            break;
+        }
+    }
+    if(count==0){ 
+        document.write("Prime");
+    }else{ 
+        document.write("composite");
+    }
+}
+
+
+
+
+</script> 
+
+</body>
+</html>
