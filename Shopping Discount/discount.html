@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        var Men = parseInt(prompt("Enter your number"));
+        var Women = parseInt(prompt("Enter your number"));
+        var Kids = parseInt(prompt("Enter your number"));
+        
+        Shopping = Men + Women + Kids;
+         Discount = 10 * Shopping/ 100
+         Discount1 = 20* Shopping/ 100
+
+         
+        if(Shopping>= 500 && Shopping <= 1000){
+             document.write(Shopping - Discount);
+        }else if(Shopping >= 1000 && Shopping <= 2000){
+            document.write(Shopping - Discount1)
+        }else{
+            document.write("Over Price")
+        }
+
+        document.write(Shopping);
+    </script>
+</body>
+</html>

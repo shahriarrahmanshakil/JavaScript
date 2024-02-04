@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assending</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt());
+        var b = parseInt(prompt());
+        var c =parseInt(prompt());
+        let values=[]
+        values.push(a,b,c)
+     
+       let largest;
+        function name(params) {
+
+        for (const value of params) {
+         if (largest>value) {
+            largest=value;
+         }
+ 
+        }
+           return largest 
+        }
+      
+       let holder=name(values)
+       document.write(holder)
+
+    </script>
+</body>
+</html>

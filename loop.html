@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for(x=60 ; x >=1 ; x--){
+        //     document.write(x + "<br/>");
+        // }
+        // for ( x=1; x <= 50; x++){ 
+        //     document.write(x + " " + "Bangladesh" + "<br/>")
+        // }
+            const a = parseFloat(prompt("Enter First Number"));
+            const b = parseFloat(prompt("Enter Second Number"));
+            const c = parseFloat(prompt("Enter Third Number"));
+
+            let largest;
+
+            if (a > b){
+                largest = a;
+            } else if( b> c) {
+                largest = b;
+            }else {
+                largest = c;
+            }
+            
+            document.write("The largest number is " + largest);
+       
+    </script>
+</body>
+</html>
