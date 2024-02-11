@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positive_Negative and Zero</title>
+</head>
+<body>
+    <script>
+        var beR = prompt()
+        var number = [number]
+        var positive = 0;
+        var negative = 0;
+        var zero = 0;
+        var sum = 0;
+
+        for(x=0; x<number.length; x++){
+        
+            if(number[x]>0){
+                positive++
+            }else if(number[x] <0){
+                negative++
+            }else{
+                zero++
+            }
+            sum = sum + number[x]
+        }
+            document.write(positive + "<br>")
+            document.write(negative + "<br>")
+            document.write(zero + "<br>")
+            document.write(sum)
+    </script>
+</body>
+</html>

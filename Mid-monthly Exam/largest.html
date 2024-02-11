@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+<body>
+    
+    <script>
+        const fnum = prompt("Enter your First Number");
+        const snum = prompt("Enter your Second Number");
+        const tnum = prompt("Enter your Third Number");
+        let largest;
+        if(fnum > snum && fnum > tnum){
+            largest = fnum;
+        }else if(snum > fnum && snum > tnum){
+            largest = snum;
+        }else{
+            largest = tnum;
+        }
+        document.write(largest);
+    </script>
+</body>
+</html>
