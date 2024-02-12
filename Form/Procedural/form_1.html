@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural form</title>
+    <style>
+        fieldset{
+            width: fit-content;
+        }
+
+        label{
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="pform">
+
+        <fieldset>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"> <br><br>
+
+            <label for="fname">Father Name</label>
+            <input type="text" name="fname" id="fname"><br><br>
+
+            <label for="mname">Mother Name</label>
+            <input type="text" name="mname" id="mname"><br><br>
+
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="20" rows="5"></textarea><br><br><br><br>
+
+            <label for="gender">Gender</label>
+            
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label> 
+            <input type="radio" name="gender"  id="female" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <input type="reset" value="Reset"> &nbsp;&nbsp;&nbsp;
+            <input type="button" value="Submit" onclick="nwin_Open()">
+
+        </fieldset>
+
+    </form>
+
+        <script>
+            function nwin_Open(){
+                var naME = document.pform.name.value;
+                var fnaME = document.pform.fname.value;
+                var mnaME = document.pform.mname.value;
+                var anaME = document.pform.address.value;
+                var gendeR = " " ;
+
+                for(let i = 0; i < document.pform.gender.length; i++){
+
+                    if(document.pform.gender[i].checked){
+
+                        gendeR = document.pform.gender[i].value;
+
+                    }
+                }
+
+                var my_nwindow = window.open(" ", " ", "width = 350px, height = 400px");
+
+                with(my_nwindow.document){
+
+                    write(naME  + "<br>");
+                    write(fnaME + "<br>");
+                    write(mnaME + "<br>");
+                    write(anaME + "<br>");
+                    write(gendeR);
+                }
+
+            }
+
+        </script>
+
+</body>
+</html>
