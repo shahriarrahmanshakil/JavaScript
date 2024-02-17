@@ -11,15 +11,15 @@
 
         label{
             display: inline-block;
-            width: 100px;
+            width: 150px;
         }
     </style>
 </head>
 
 <body>
-    <form name="pform">
+    <form name="pform" style="width: 35%; height: 1000px; margin: 50px auto;">
 
-        <fieldset>
+        <fieldset style="height: 500px;">
 
             <label for="name">Name</label>
             <input type="text" name="name" id="name"> <br><br>
@@ -31,14 +31,21 @@
             <input type="text" name="mname" id="mname"><br><br>
 
             <label for="address">Address</label>
-            <textarea name="address" id="address" cols="20" rows="5"></textarea><br><br><br><br>
+            <textarea name="address" id="address" cols="21" rows="5"></textarea><br><br><br><br>
+
+            <label for="Course">Course</label>
+            <select name="Course" id="Course">
+                <option value="WDPF">WDPF</option>
+                <option value="C#">C#_NET</option>
+                <option value="JEE">JAVA</option>
+                <option value="NETWORK">NETWORK</option>
+            </select><br><br>
 
             <label for="gender">Gender</label>
-            
             <input type="radio" name="gender" id="male" value="Male">
-            <label for="male">Male</label> 
+            Male 
             <input type="radio" name="gender"  id="female" value="Female">
-            <label for="female">Female</label><br><br>
+            Female<br><br>
 
             <input type="reset" value="Reset"> &nbsp;&nbsp;&nbsp;&nbsp;
             <input type="button" value="Submit" onclick="nwin_Open()">
@@ -48,35 +55,29 @@
     </form>
 
         <script>
-            function nwin_Open(){
-                var naME = document.pform.name.value;
-                var fnaME = document.pform.fname.value;
-                var mnaME = document.pform.mname.value;
-                var anaME = document.pform.address.value;
-                var gendeR = " " ;
+           function nwin_Open() {
+                var naME   = document.pform.name.value;
+                var fnaME  = document.pform.fname.value;
+                var mnaME  = document.pform.mname.value;
+                var anaME  = document.pform.address.value;
+                var gendeR = " ";
 
-                for(let i = 0; i < document.pform.gender.length; i++){
-
-                    if(document.pform.gender[i].checked){
-
-                        gendeR = document.pform.gender[i].value;
-
+                for (let i = 0; i < document.pform.gender.length; i++) {
+                    if (document.pform.gender[i].checked) {
+                    gendeR = document.pform.gender[i].value;
                     }
                 }
 
                 var my_nwindow = window.open(" ", " ", "width = 350px, height = 400px");
 
-                with(my_nwindow.document){
-
-                    write(naME  + "<br>");
+                with (my_nwindow.document) {
+                    write(naME + "<br>");
                     write(fnaME + "<br>");
                     write(mnaME + "<br>");
                     write(anaME + "<br>");
                     write(gendeR);
                 }
-
-            }
-
+                }
         </script>
 
 </body>

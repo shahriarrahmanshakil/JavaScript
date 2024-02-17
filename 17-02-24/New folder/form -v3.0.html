@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6 offset-3">
+        <form id="form1">
+          <div class="mb-3">
+            <label for="fn" class="form-label">Name:</label>
+            <input type="text" class="form-control" name="fn" id="fn">
+          </div>
+          <div class="mb-3">
+            <label for="con" class="form-label">Contact:</label>
+            <input type="text" class="form-control" name="con" id="con">
+          </div>
+          <div class="mb-3">
+            <label for="remark" class="form-label">Remark:</label>
+            <textarea class="form-control" name="remark" id="remark"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender:</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" value="Male" id="gender_0">
+              <label class="form-check-label" for="gender_0">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" value="Female" id="gender_1">
+              <label class="form-check-label" for="gender_1">Female</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Course:</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="course" value="NT" id="course_0">
+              <label class="form-check-label" for="course_0">NT</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="course" value="C#" id="course_1">
+              <label class="form-check-label" for="course_1">C#</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="course" value="WPSI" id="course_2">
+              <label class="form-check-label" for="course_2">WDPF</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="location" class="form-label">Location:</label>
+            <select class="form-select" name="location" id="location">
+              <option value="Dhaka">Dhaka</option>
+              <option value="CTG">CTG</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" name="button" id="button">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
+<script>
+  class FormValues{
+		constructor(fromData){
+		  for(let [name,value] of fromData){
+			this[name]=fromData.getAll(name).join(',');
+		  }
+		}
+	//getAll method return an array of all the values by a key name.
+		getData(){
+			var result="Name: "+this.fn+"<br>";
+			result+="Contact: "+this.con+"<br>";
+			result+="Remark: "+this.remark+"<br>";
+			result+="Gender: "+this.gender+"<br>";
+			result+="Course: "+this.course+"<br>";
+			result+="Location: "+this.location+"<br>";
+		  var win=window.open('','','width=400,height=400');
+		  
+		  win.document.write(result);
+		}
+	}
+	form1.onsubmit=async(e)=>{
+		e.preventDefault();
+		form=document.querySelector('#form1');
+		form_data=new FormData(form);
+			
+		f=new FormValues(form_data);
+		f.getData();
+	}
+  </script>
