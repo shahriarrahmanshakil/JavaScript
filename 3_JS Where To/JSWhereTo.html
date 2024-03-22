@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Where To</title>
+    <script>
+        function fe(){
+            document.getElementById("fe").innerHTML="JavaScript work with head or body";
+        }
+    </script>
+</head>
+<body>
+  <!-- In HTML,JavaScript is inserted between <script>and</script> tags -->
+  <p>In HTML,JavaScript is inserted between &lt;script&gt; and &lt;/script&gt; tags</p>
+  <p id="demo">Bangladesh</p>
+
+  <script>
+    document.getElementById("demo").innerHTML="I Love My Country";
+  </script>
+
+  <hr>
+  <h3>JavaScript Functions and Events</h3>
+  <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.</p>
+  <br>
+
+  <pre id="fe">
+    JavaScript in &lt;head&gt; or &lt;body&gt;
+        You can place any number of scripts in an HTML document.
+        
+        Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt;section of an HTML page, or in both.
+  </pre>
+
+  <button onclick="fe()">Click Here</button>
+
+  <hr>
+  <h4>Scripts can also be placed in external files </h4>
+
+  
+    <p id="exscript">
+        Placing scripts in external files has some advantages:
+        It separates HTML and code
+        It makes HTML and JavaScript easier to read and maintain
+        Cached JavaScript files can speed up page loads
+    </p>
+  
+
+  <button onclick="externalscript()">Click</button>
+  <script src="JSWhereTo.js">
+
+  </script>
+</body>
+</html>
