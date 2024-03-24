@@ -6,18 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bangladesh</h1> 
-    <!DOCTYPE html>
-    <p id= "kabir">rafia</p>
-
-    <button type="button"
-    onclick="document.getElementById('kabir').innerHTML = Date()">
-    Click me to display Date and Time.</button>
+    
+    <h1>Practicing array </h1>
 
 
-    <h2>My First JavaScript</h2>
-
-
-    <script src="demo.js"></script>
+    <script>
+        
+        function highestscore(scores){
+            let maxiMum = scores[0];
+            for(let i = 1  ; i < scores.length; i++){
+                if(maxiMum < scores[i]){
+                    maxiMum = scores[i];
+                }
+            }
+            return maxiMum;
+        }
+        let scores = [10,89,5,6,8,9];
+        var maxiMumScore = highestscore(scores);
+        document.write(maxiMumScore);
+     
+    </script>
 </body>
 </html>
