@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output</title>
+</head>
+<body>
+    <h3>JavaScript Display Possibilities</h3>
+    <p>JavaScript can "display" data in different ways:</p>
+    <hr>
+    <h3>Using innerHTML</h3>
+    <p id="demo">To access an HTML element, JavaScript can use the document.getElementById(id) method.</p>
+    <button onclick="Changehtml()">Click Here!</button>
+    <button onclick="mainhtml()">Click and Back</button>
+    <br><br>
+    <hr>
+    <h3>Using document.write()</h3>
+    <script>
+        document.write("The document.write() method should only be used for testing.");
+    </script>
+    <p>Using document.write() after an HTML document is loaded, will delete all existing HTML:</p>
+    <button onclick="document.write('delete all existing HTML')">Click and delete all existing HTML</button>
+    <br><br>
+    <hr>
+    <h3>Using console.log()</h3>
+    <p>For debugging purposes, you can call the console.log() method in the browser to display data.</p>
+    <p>Go to console</p>
+    <script>
+        console.log("Hello World");
+    </script>
+    
+    <script src="js_output.js"> 
+
+    </script>
+</body>
+</html>
