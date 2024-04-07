@@ -9,8 +9,15 @@
     <h3>Descending numbers</h3>
     <hr>
     <script>
+        var count = 0;
         for(let i = 1000; i >= 1; i--){
-            document.write(i);       
+                count++;
+                document.write(i + "\t");
+            if(count == 5){
+                document.write("<br>");
+                count=0;
+            }   
+
         }
     </script>
 </body>
