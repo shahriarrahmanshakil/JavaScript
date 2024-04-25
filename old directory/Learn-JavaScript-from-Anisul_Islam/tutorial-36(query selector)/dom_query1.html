@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM query1</title>
+</head>
+<body>
+    <h1>JavaScript is the world's most popular programming language.</h1>
+
+    <a href="#">Shahriar Rahman Shakil</a>
+
+    <ul>
+        <li> <a href="#">Coffee</a></li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <div class="name">
+        <a href="#">Shakil</a>
+    </div>
+
+    <script>
+        document.querySelector("a").innerHTML = "My Name is Shahriar Rahman Shakil";
+
+        document.querySelector("li a").innerHTML = "I Love Coffe";
+
+        document.querySelector(".name a").innerHTML= "This is Shakil";
+    </script>
+
+</body>
+</html>
