@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_id</title>
+</head>
+<body>
+    <h2 id="heading2">select html elements</h2>
+    <h4 id="heading4">select html elements</h4>
+    <p id="page">This page teaches you how to find and access HTML elements in an HTML page.</p>
+
+    <script>
+
+        var myheading2 = document.getElementById("heading2");
+            myheading2.innerHTML = "This is Heading - 2";
+
+        
+        var myheading4 = document.getElementById('heading4');
+                        myheading4.innerHTML = "This is Heading-4";
+
+        document.getElementById("page").innerHTML = "Finding HTML Elements"
+    </script>
+
+</body>
+</html>
