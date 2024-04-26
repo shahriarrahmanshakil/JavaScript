@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <h1>Event Handler onclick event</h1>
+    <button onclick="mymessage1()">Click Here</button><br><br>
+    <button onclick ="mymessage2()">Click</button>
+    
+    <p id="bd">Bangladesh</p>
+
+    <button onclick="img()">imag1</button>
+
+    <button onclick="img2()">imag2</button>
+    
+    <br><br>
+    <img id="img1" src="" alt="" height="300" width="300">
+
+    <script>
+        function mymessage1(){
+           document.getElementById('bd').innerHTML = "Hello";
+        }
+        
+        
+        function mymessage2(){
+            document.getElementById('bd').innerHTML = "I am buton-2";
+        }
+
+          
+        function mymessage3(){
+             alert('Bangladesh is Beautifull Country');
+        }
+
+        function img(){
+            document.querySelector('#img1').src="Events2.jpg";
+        }
+
+        
+        function img2(){
+            document.querySelector('#img1').src="event.jpg"
+        }
+
+    </script>
+</body>
+</html>
