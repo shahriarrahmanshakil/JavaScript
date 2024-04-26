@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulating</title>
+</head>
+<body>
+    <a href="#">Visit Google</a>
+
+    <div id="mydiv" style="background-color: darkcyan;">
+        <h1>Hello</h1>
+        <h1>Goodbye</h1>
+    </div>
+
+    <script>
+        var heading3 = document.createElement('h1');
+        var text = document.createTextNode('This Heading-3');
+        heading3.appendChild(text);
+
+        var mydiv = document.getElementById('mydiv');
+        mydiv.appendChild(heading3);
+
+        var heading2 = document.getElementsByTagName("h1")['1'];
+        mydiv.removeChild(heading2);
+
+
+        var heading0 = document.createElement('h1');
+        var text0 = document.createTextNode('This Heading-0');
+        heading0.appendChild(text0);
+
+        mydiv.insertBefore(heading0,heading3);
+
+    </script>
+</body>
+</html>
