@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
+    <style>
+        button {
+            background-color: #0b8558; 
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(7, 146, 65);
+        }
+    </style>
 </head>
 <body>
-    <button onclick="Previous()">Previous</button>
-    <img src="Olympic Logo/2000_Olympic.png" alt="Olympic Logo 2000" width="400px" height="500px">
-    <button onclick="Next()">Next</button>
-
+    <div style="margin-top: 6%; margin-left: 25%;">
+        <button onclick="Previous()">Previous</button>
+        <img src="Olympic Logo/2000_Olympic.png" alt="Olympic Logo 2000" width="350px" height="400px">
+        <button onclick="Next()">Next</button>
+    </div>
+    
     <script>
         
        

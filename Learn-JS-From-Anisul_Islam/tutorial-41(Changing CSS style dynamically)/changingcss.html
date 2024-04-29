@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing CSS</title>
+</head>
+<body>
+    <h1 id="bd">Bangladesh</h1>
+    <button onclick="addstyle()">Add Style</button>
+    <button onclick="removedStyle()">Remove Style</button>
+
+    <script>
+        function addstyle(){
+            mystyle = document.querySelector("#bd");
+            mystyle.style.color ="red";
+            mystyle.style.fontSize ="3rem";
+        }
+
+        function removedStyle(){
+            mystyle = document.querySelector("#bd");
+            mystyle.style.color ="";
+            mystyle.style.fontSize ="";
+
+        }
+    </script>
+</body>
+</html>
