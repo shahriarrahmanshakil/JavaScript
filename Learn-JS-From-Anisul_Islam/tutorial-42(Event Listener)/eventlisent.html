@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    <h1>JavaScript HTML DOM Events</h1>
+    <button>Click</button>
+
+    <script>
+        document.querySelector("button").addEventListener("click",hello);
+        function hello(){
+            alert("Hello Bangladesh");
+        }
+
+        
+        document.querySelector("h1").addEventListener("mouseover",heading1);
+        function heading1(){
+            document.querySelector("h1").style.color = 'red';
+        }
+
+        document.querySelector("h1").addEventListener("mouseout",heading1);
+        function heading1(){
+            document.querySelector("h1").style.color = '';
+        }
+
+        
+
+    </script>
+</body>
+</html>
