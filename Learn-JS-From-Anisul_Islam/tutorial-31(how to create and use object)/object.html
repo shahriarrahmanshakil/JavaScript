@@ -6,34 +6,65 @@
     <title>Object Create</title>
 </head>
 <body>
+    <h1>Go to console</h1>
     <script>
-        var name = "Shahriar Rahman Shakil";
-        var age = 27;
+        // var name = "Shahriar Rahman Shakil";
+        // var age = 27;
         // console.log(age);
 
         // creating Object
-        var student1 = {
-            name : "Shahriar",
-            age  : 27,
-            GPA  : 4.44,
-        language : ["Bangla","English","Arabic"]
-        }
+        // var student1 = {
+        //     name : "Shahriar",
+        //     age  : 27,
+        //     GPA  : 4.44,
+        // language : ["Bangla","English","Arabic"]
+        // }
             
-        var student2 = {
-            name : "Rahman",
-            age  : 26,
-            GPA  : 4.00,
-        language : ["Bangla","English","Finish"]
-        }
+        // var student2 = {
+        //     name : "Rahman",
+        //     age  : 26,
+        //     GPA  : 4.00,
+        // language : ["Bangla","English","Finish"]
+        // }
         
-        var student3 = {
-            name : "Shakil",
-            age  : 25,
-            GPA  : 3.50,
-        language : ["Bangla","English","Korean"]
-        }
+        // var student3 = {
+        //     name : "Shakil",
+        //     age  : 25,
+        //     GPA  : 3.50,
+        // language : ["Bangla","English","Korean"]
+        // }
         
-        console.log(student3.name);
+        // console.log(student3.name);
+
+        //creating object templeate
+        function Student(name,age,GPA,language)
+        {
+            this.name     = name;
+            this.age      = age;
+            this.GPA      = GPA;
+            this.language =language;
+            
+            this.details = function()
+            {   
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.GPA);
+                console.log(this.language);
+            }
+            
+        }
+        // var Student1 = new Student("Shahriar Rahman Shakil",27,4.44,['Bangla','English','Urdhu']);
+        // console.log(Student1.name);
+        // console.log(Student1.age);
+        // console.log(Student1.GPA);
+        // console.log(Student1.language);
+        var Student1 = new Student("Shahrir",27,4.44,["Bangla","English"]);
+        var Student2 = new Student("Rahman",24,3.00,["Bangla","English","Japanees"]);
+        var Student3 = new Student("Shakil",33,4.00,["Bangla","English","Nepali"]);
+
+        Student1.details();
+        Student2.details();
+        Student3.details();
         
     </script>
 </body>
