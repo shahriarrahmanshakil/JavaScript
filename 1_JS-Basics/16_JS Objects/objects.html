@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <script>
+        //creating object 
+        const student = {   name : "Shahriar Rahman Shakil", 
+                            department : "Management", 
+                            class : "MBA", 
+                            session : "2021-22",
+                            roll : 156
+                        };
+                        console.log(student.roll);
+
+        //creating object with Methods
+        const student1 = {  name : "Shahriar Rahman Shakil", 
+                            department : "Management", 
+                            class : "MBA", 
+                            roll : 156,
+                            session : "2021-22",
+                            details : function()
+                            {
+                                return this.name + " " + this.class + "," + this.department + " " + this.session; 
+                            }
+                        };
+                        console.log(student1.details());
+
+    </script>
+</body>
+</html>
