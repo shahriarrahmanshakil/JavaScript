@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Handler</title>
+   
 </head>
 <body>
     <h1>Event Handler onclick event</h1>
@@ -17,7 +18,10 @@
     <button onclick="img2()">imag2</button>
     
     <br><br>
-    <img id="img1" src="" alt="" height="300" width="300">
+    
+    <div style="display: none;" id="myimg">
+        <img id="img1" src="#" alt="" height="300" width="300">
+    </div>
 
     <script>
         function mymessage1(){
@@ -35,6 +39,10 @@
         }
 
         function img(){
+            const imgContainer= document.getElementById('myimg');
+            console.log(imgContainer)
+            imgContainer.style.display="block";
+
             document.querySelector('#img1').src="Events2.jpg";
         }
 
