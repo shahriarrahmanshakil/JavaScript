@@ -1,7 +1,7 @@
 for(let i = 0; i < 3; i++){ 
     document.querySelectorAll(".mybtn")[i].addEventListener("click", function(){
         var text = this.innerHTML;
-        console.log(text);
+        // console.log(text);
 
 
         switch(text){
@@ -11,14 +11,14 @@ for(let i = 0; i < 3; i++){
                 break;
 
             case"b":
-            var audio = new Audio("retro.mp3");
-            audio.play();
-            break;
+                var audio = new Audio("retro.mp3");
+                audio.play();
+                break;
 
             case"c":
-            var audio = new Audio("game-level.mp3");
-            audio.play();
-            break;
+                var audio = new Audio("game-level.mp3");
+                audio.play();
+                break;
         }
     })
 }
