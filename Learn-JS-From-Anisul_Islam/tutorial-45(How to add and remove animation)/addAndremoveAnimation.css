@@ -1,0 +1,20 @@
+button{
+    border: none;
+    border-radius: 20px;
+    background-color: gray;
+    width: 150px;
+    padding: 20px;
+    cursor: pointer;
+    color: wheat;
+    font-size: 40px;
+    margin: 0px 20px;
+}
+button:hover{
+    background-color: burlywood;
+    color: beige;
+}
+
+.addAnimation{
+    box-shadow: 0 15px 18px 0 tomato;
+    opacity: 0.5;
+}
