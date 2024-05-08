@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider 2</title>
+</head>
+<body>
+    <button onclick="previous()">Previous</button>
+    <img src="Olympic Logo/1956_Olympics.png" alt="Olympic Logo" width="500px" height="500px">
+    <button onclick="next()">Next</button>
+
+    <script>
+        var pictures = ['Olympic Logo/1956_Olympics.png','Olympic Logo/1960_Olympic.png','Olympic Logo/1964_Olympic.png','Olympic Logo/1988_Olympic.png','Olympic Logo/1992_Olympic.png'];
+        console.log(pictures.length);
+        var image = document.querySelector("img");
+       
+        var count = 0 ;
+        // console.log(count);
+
+        function next(){
+            count++;
+                if(count >= pictures.length){
+                    count = 0;
+                    image.src = pictures[length];
+                }
+            image.src = pictures[count];
+            console.log(count);
+
+        }
+
+        function previous(){
+            count--
+            if(count < 0){
+                count = pictures.length - 1
+                image.src = pictures[count];
+            }
+            image.src = pictures[count];
+            console.log(count);
+        }
+    </script>
+</body>
+</html>

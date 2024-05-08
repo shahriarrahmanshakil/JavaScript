@@ -27,7 +27,7 @@
 <body>
     <div style="margin-top: 6%; margin-left: 25%;">
         <button onclick="Previous()">Previous</button>
-        <img src="Olympic Logo/2000_Olympic.png" alt="Olympic Logo 2000" width="350px" height="400px">
+        <img src="Olympic Logo/2000_Olympic.png" alt="Olympic Logo" width="350px" height="400px">
         <button onclick="Next()">Next</button>
     </div>
     
@@ -40,11 +40,13 @@
         
         function Previous(){
             count--;
-            if(count < 0){
-                count = photos.length-1;
-                image.src = photos[count];
-            }
+            // if(count < 0){
+            //     count = photos.length-1;
+            //     image.src = photos[count];
+            // }else{
+            //}
             image.src = photos[count];
+            
         }
 
         function Next(){
