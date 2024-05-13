@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onsubmit</title>
+    <link rel="stylesheet" href="eventObject_onsubmit.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br><br> 
+        </div>
+
+        <div> 
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required minlength="5" maxlength="8"><br><br>
+        </div>        
+
+        <div>
+            <input type="submit" name="btnsubmit" value="Submit">
+        </div>
+    </form>
+    <script src="eventObject_onsubmit.js"></script>
+</body>
+</html>
