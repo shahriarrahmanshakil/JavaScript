@@ -21,8 +21,3 @@ div.addEventListener('drop', function(e){
 
 
 
-
-
-
-
-
