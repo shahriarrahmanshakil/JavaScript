@@ -31,7 +31,7 @@ function myfunction2(){
     message2.textContent = count;
 
     setInterval(()=>{
-        // count++;
+        count++;
         message2.textContent = count;
     },2000);
 }
