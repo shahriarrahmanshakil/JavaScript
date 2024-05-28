@@ -4,7 +4,7 @@ const message = "I Love Bangladesh, Bangladesh is Beautiful country";
 console.log(message.startsWith("I",0));
 
 //endwith(searching, length).......>>
-console.log(message.endsWith("Country"));
+console.log(message.endsWith("country"));
 console.log(message.endsWith("country"));
 
 //includes(searching, position)
