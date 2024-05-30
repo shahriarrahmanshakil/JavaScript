@@ -1,4 +1,3 @@
 
-
-import { text } from "./module.js";
+const { text } = require('./module.js');
 console.log(text);

@@ -1,3 +1,6 @@
 
+ let text = "Wellcome to Module";
+module.exports = {
+   text,
 
-export let text = "Wellcome to Module";
+  };
