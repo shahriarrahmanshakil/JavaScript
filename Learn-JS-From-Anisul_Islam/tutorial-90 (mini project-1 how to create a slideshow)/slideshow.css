@@ -1,0 +1,27 @@
+.slideshow-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .slideshow-Elements{
+
+} */
+
+.slideshow-Element{
+    text-align: center;
+    position: absolute;
+    /* transform: translate(-50%,-50%)scale(0); */
+}
+
+.slideshow-Element i,h1{
+    font-size: 10rem;
+
+}
+
+.slideshow-Element .current{
+    /* transform: translate(-50%,-50%)scale(1); */
+
+}
+
