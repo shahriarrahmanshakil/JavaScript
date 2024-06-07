@@ -1,3 +1,4 @@
+// Check Answer = https://www.teaching-materials.org/javascript/exercises/functions
 /**
  * Write a function named tellFortune that:
         takes 4 arguments: number of children, partner's name, geographic location, job title.
