@@ -1,0 +1,33 @@
+/* reset code starts*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* reset code ends*/
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.posts{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    width: 23%;
+    background-color: rgb(227, 181, 181);
+    margin: 0.1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, .0, .0, 0.2);
+    padding: 1rem;
+    transition: all 0.4s;
+}
+
+.post:hover{
+    box-shadow: 0 4px 16px 0 rgba(0, .0, .0, 0.2);
+}
+
