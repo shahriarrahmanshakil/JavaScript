@@ -6,13 +6,13 @@
         Call that function 3 times with 3 different values for the arguments.
  */
 
-    function tellFortune(jTitle,gloc,pName,childrenNum){
-       let futureinfo = `You will be a ${jTitle} in ${gloc}, and married to ${pName} with ${childrenNum} kids`;
-       console.log(futureinfo);
-    }
-    tellFortune("Manager","Dhaka","Marjina",3);
-    tellFortune("CEO","Barlin","Jessy",5);
-    tellFortune("IT Expert","New Delli","Sabana",7);
+       function tellFortune(jTitle,gloc,pName,childrenNum){
+              let futureinfo = `You will be a ${jTitle} in ${gloc}, and married to ${pName} with ${childrenNum} kids`;
+              console.log(futureinfo);
+       }
+       tellFortune("Manager","Dhaka","Marjina",3);
+       tellFortune("CEO","Barlin","Jessy",5);
+       tellFortune("IT Expert","New Delli","Sabana",7);
 
 
 /**
@@ -24,14 +24,14 @@
         Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years.
  */
 
-    function calculateDogAge(puppyAge){
-        let dogYears = 7*puppyAge;
-        let dogAge = `Your doggie is ${dogYears} years old in dog years!`;
-        console.log(dogAge);
-    }
-    calculateDogAge(12);
-    calculateDogAge(5);
-    calculateDogAge(3);
+       function calculateDogAge(puppyAge){
+              let dogYears = 7*puppyAge;
+              let dogAge = `Your doggie is ${dogYears} years old in dog years!`;
+              console.log(dogAge);
+       }
+       calculateDogAge(12);
+       calculateDogAge(5);
+       calculateDogAge(3);
 
 /**
  * Write a function named calculateSupply that:
@@ -83,5 +83,20 @@
         Now store a fahrenheit temperature into a variable.
         Convert it to celsius and output "NN°F is NN°C."
  */
+       //  (0°C × 9/5) + 32 = 32°F
 
-        
+       function celsiusToFahrenheit(){
+              let celsius = prompt("Enter your celsius");
+              let fahrenheit = (celsius * 9/5) + 32;
+              console.log(`${celsius}°C to ${fahrenheit}°F`);
+        }
+
+       celsiusToFahrenheit();
+
+       
+       function fahrenheitToCelsius(){
+              let fahrenheit = prompt("Enter your fahrenheit");
+              let celsius = (fahrenheit - 32) * 5/9;
+              console.log(`${fahrenheit}°F to ${celsius}°C`);
+        }
+       fahrenheitToCelsius();
