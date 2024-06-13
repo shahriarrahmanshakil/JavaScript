@@ -11,6 +11,7 @@ console.log(n2);
 console.log(...n3); //provides 2 values as string
 console.log(n3);  //provides values as Array 
 
+
 //swap variables
 let name = "Shahriar Rahman Shakil";
 let number = 1997;
@@ -24,3 +25,48 @@ let b = 99;
 [a,b] = [b,a];
 console.log(a); //shows variable b value
 console.log(b); //shows variable a value
+
+
+//Object Destruturing 
+const studentInformation = {
+    nam : "Shahriar Rahman Shakil",
+    department : "Management",
+    college : "Dhaka College"
+}
+let {nam,department,college} = studentInformation;   //object destructuring
+let info1 = nam;
+let info2 = department;
+let info3 = college;
+console.log(info1);
+console.log(info2);
+console.log(info3);
+console.log("-------------------------------------------");
+
+
+//Nested Object Destruturing 
+const Info = {
+    fullName : "Raihan Molla Raju",
+    Address : "Lalbag,Dhaka",
+    language : {
+        native : "Bangla",
+        beginer : "English",
+    }
+}
+let {fullName,Address,language} = Info;
+console.log(fullName);
+console.log(Address);
+console.log(language.native);
+console.log(language.beginer);
+console.log("-------------------------------------------");
+
+
+//Function Destructuring
+const Einfo = ({id,name}) =>{
+    console.log(` ID:${id} \n Name:${name}`);
+}
+
+const employinfo = {
+    id : 120001,
+    name : "Jakir Hossain"
+    }
+Einfo(employinfo);
