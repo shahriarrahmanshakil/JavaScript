@@ -14,12 +14,12 @@ for(let i = 0; i < numbers.length; i++){
 
 const fruits = ['Apple','Orange','Mango','Jackfruit'];
 
-// console.log(fruits.forEach((fruit) =>{console.log(fruit);}));    //Arrow function use 
-    console.log(fruits.forEach(fruit));
+fruits.forEach((fruit) =>console.log(fruit));    //Arrow function use 
+    // console.log(fruits.forEach(fruit));
 
-    function fruit (currentValue,index,arr){
-        console.log(currentValue);
-    }
+    // function fruit (currentValue,index,arr){
+    //     console.log(currentValue);
+    // }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -42,3 +42,4 @@ console.log(newNumbers);
 function newfunction(num,index,arr){
     arr[index] = num + 10;
 }
+
