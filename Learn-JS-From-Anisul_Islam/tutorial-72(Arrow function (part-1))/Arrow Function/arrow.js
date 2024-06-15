@@ -22,7 +22,11 @@ console.log(working2());
 
 //How to pass parameter in arrow and traditional function 
 
-
+//traditional function 
+function sum(a,b){
+    return a+b;
+}
+console.log(sum(9,23));
 
 
 
