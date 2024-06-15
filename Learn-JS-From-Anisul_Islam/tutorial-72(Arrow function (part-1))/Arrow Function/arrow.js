@@ -30,7 +30,7 @@ console.log(sum(9,23));
 
 //arrow function 
 
-const multiplication = (x,y) => x * y ;
+const multiplication = (x,y) => x * y ; //if on parameter perantheisis is not mendatory
 console.log(multiplication(7,8));
 
 
