@@ -28,6 +28,11 @@ function sum(a,b){
 }
 console.log(sum(9,23));
 
+//arrow function 
+
+const multiplication = (x,y) => x * y ;
+console.log(multiplication(7,8));
+
 
 
 
