@@ -1,11 +1,10 @@
-//Call Back and Higher Order Function 
-function test(a) {
-    console.log(`square of ${a} : ${a * a}`);
+
+function test(x) {
+    console.log(`Square of ${x} : ${x * x}`);
 }
 test(9);
-
 
 function higherOrderFunction(number, callback){
     callback(number);
 }
-higherOrderFunction(10,test);
+higherOrderFunction(7,test);
