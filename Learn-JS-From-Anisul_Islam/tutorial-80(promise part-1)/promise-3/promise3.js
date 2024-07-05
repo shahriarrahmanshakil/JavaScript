@@ -1,4 +1,5 @@
 console.log("well-come");
+
     //How to Create Promise (Pending, Reslove, Reject)
     const mypromise1 = new Promise((resolve,reject) => {
         let complitedPromise = true;
@@ -27,6 +28,19 @@ console.log("well-come");
         console.log(result);
     });
 
+    //Create Another Promise and
+    //race function added
+    const mypromise3 = new Promise((resolve,reject) => {
+        setTimeout(() =>{ resolve("Promise Successfully Complited -03")},2000)
+    });
+
+    const mypromise4 = new Promise((resolve,reject) => {
+        setTimeout(() =>{ resolve("Promise Successfully Complited -04")},1000)
+    });
+
+    Promise.race([mypromise3,mypromise4]).then((result) => {
+        console.log(result);
+    });
 
 console.log("End")
 
