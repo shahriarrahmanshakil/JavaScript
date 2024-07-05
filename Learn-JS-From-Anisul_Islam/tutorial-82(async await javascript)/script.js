@@ -32,7 +32,7 @@ console.log("hi");
         });
     }
 
-    async function alltask(){
+        const alltask = async() => {
         let t1 = await task1();
         console.log(t1);
 
