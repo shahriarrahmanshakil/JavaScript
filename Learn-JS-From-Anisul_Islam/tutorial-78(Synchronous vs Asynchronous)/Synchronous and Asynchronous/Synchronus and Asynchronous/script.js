@@ -1,14 +1,14 @@
 //JavaScript By Default Synchronous Programmig Language
 //Synchronous Programming 
 
-/*
 console.log("Task-01");
 console.log("Task-02");
 console.log("Task-03");
 console.log("Task-04");
 console.log("Task-05");
 console.log("Task-06");
-*/
+
+console.log("-------------------------------------------");
 
 const Dataloading = () => {
     console.log("This is Task Four and \nData is Loading");
