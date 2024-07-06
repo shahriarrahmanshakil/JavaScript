@@ -10,8 +10,12 @@
 => - does not support all the older browser
 */
 
-const makeRequest = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+const makeRequest = async (url) => {
+    const response = await fetch(url);
+    if(!response.ok){
+        const message = `Error : ${response.status}`;
+        throw new Error(message)
+    }
     const data = await response.json();
     return data;
 }
@@ -19,5 +23,6 @@ const makeRequest = async () => {
 const getData = () => {
     makeRequest()
     .then((response) => console.log(response))
+    .catch((error) => console.log(error))
 }
 getData();
