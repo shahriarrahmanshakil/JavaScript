@@ -10,8 +10,8 @@
 => - does not support all the older browser
 */
 
-const makeRequest = async (url) => {
-    const response = await fetch(url);
+const makeRequest = async (url,config) => {
+    const response = await fetch(url,config);
     if(!response.ok){
         const message = `Error : ${response.status}`;
         throw new Error(message)
@@ -21,8 +21,25 @@ const makeRequest = async (url) => {
 }
 
 const getData = () => {
-    makeRequest()
+    makeRequest('https://jsonplaceholder.typicode.com/posts')
     .then((response) => console.log(response))
     .catch((error) => console.log(error))
 }
-getData();
+
+const sendData = () => {
+    makeRequest('https://jsonplaceholder.typicode.com/posts',{
+        method: 'POST',
+        body: JSON.stringify({
+          title: 'foo',
+          body: 'bar',
+          userId: 1,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error))
+}
+
+sendData();
