@@ -42,4 +42,16 @@ const updateData = () => {
         userId: 1,
     })
 }
-updateData();
+
+const updateSingleData = () => {
+    makeRequest('PATCH','https://jsonplaceholder.typicode.com/posts/1',{
+        title: 'Raihan Molla Raju',
+    })
+}
+
+const deleteData = () => {
+    makeRequest('DELETE','https://jsonplaceholder.typicode.com/posts/1',{
+    
+    })
+}
+deleteData();
