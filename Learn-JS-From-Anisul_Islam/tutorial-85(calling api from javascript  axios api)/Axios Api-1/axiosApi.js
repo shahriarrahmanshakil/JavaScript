@@ -1,4 +1,7 @@
 // console.log(window);
+const makeRequest = async (url,data) => {
+    return await axios.put(url,data); 
+}
 
 // axios.get("https://jsonplaceholder.typicode.com/posts/1")
 // .then((response) => console.log(response))
@@ -26,10 +29,6 @@
 // })
 // .then((response) => console.log(response))
 
-const makeRequest = async (config) => {
-    return await axios(config); 
-}
-
 // const getData = () => {
 //     makeRequest("https://jsonplaceholder.typicode.com/posts")
 //     .then((response) => console.log(response))
@@ -44,21 +43,25 @@ const makeRequest = async (config) => {
 // }
 // sendData();
 
-const createData = () => {
-    makeRequest({
-    url:"https://jsonplaceholder.typicode.com/posts",
-    method: 'POST',
-    body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,}),
-    headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-    },
-    })
-    .then((response) => console.log(response))
-    .catch((error) => console.log(error));
-}
-createData();
+// const createData = () => {
+//     makeRequest({
+//     url:"https://jsonplaceholder.typicode.com/posts",
+//     method: 'POST',
+//     body: JSON.stringify({
+//     title: 'foo',
+//     body: 'bar',
+//     userId: 1,}),
+//     headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//     },
+//     })
+//     .then((response) => console.log(response))
+//     .catch((error) => console.log(error));
+// }
+// createData();
 
+const updateData = () => {
+   makeRequest("https://jsonplaceholder.typicode.com/posts/1",{id:1,name:"test"}).then((res)=>console.log(res.data))
+}
+updateData();
 
