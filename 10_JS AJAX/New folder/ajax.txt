@@ -1,0 +1,1 @@
+AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.
