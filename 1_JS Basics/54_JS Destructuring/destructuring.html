@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Destructuring</title>
+</head>
+<body>
+    <h1>Javascript Destructuring</h1>
+    <h2>Javascript Object</h2>
+    <div id="destructuring"></div>
+
+    <script>
+        //Create an Object
+        const person = {
+            name    : "Shahriar Shakil",
+            age     : 25,
+            address : "Dhaka, Bangladesh"
+        }
+        // console.log(person);
+
+        //Destructuring
+        let {name, age, address} = person;
+        console.log(name);
+        console.log(age);
+        console.log(address);
+
+        const nameArr = ["Bangladesh", "Nepal", "Bhutan", "Pakisatn", "Myanmar"];
+        // console.log(nameArr);
+        let [c1,c2,c3,c4,c5] = nameArr;
+        // console.log(c4);
+
+         
+    </script>
+</body>
+</html>
